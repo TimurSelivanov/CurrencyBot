@@ -25,4 +25,4 @@ Run the application and your bot in Telegram.
 Enjoy! )
 
 ## Technology stack
-Java, Spring boot, Lombok, Telegram API, Belarusian national bank API
+Java, Spring boot, Lombok, Telegram API, Belarusian national bank API, Postman
