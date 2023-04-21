@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class CurrencyController {
 
-    //method is static, so it is no need to get instance of this class
     public static String getCurrencyRate(String message, Currency currency) throws IOException, ParseException {
         URL url = new URL("https://www.nbrb.by/api/exrates/rates/" + message + "?parammode=2");
         Scanner scanner = new Scanner((InputStream) url.getContent());
