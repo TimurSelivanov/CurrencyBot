@@ -2,6 +2,7 @@ package com.selivanov.CurrencyBot.controller;
 
 import com.selivanov.CurrencyBot.model.Currency;
 import org.json.JSONObject;
+import org.springframework.stereotype.Controller;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,9 +11,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
+@Controller
 public class CurrencyController {
 
-    public static String getCurrencyRate(String message, Currency currency) throws IOException, ParseException {
+    public String getCurrencyRate(String message, Currency currency) throws IOException, ParseException {
         URL url = new URL("https://www.nbrb.by/api/exrates/rates/" + message + "?parammode=2");
         Scanner scanner = new Scanner((InputStream) url.getContent());
         String result = "";

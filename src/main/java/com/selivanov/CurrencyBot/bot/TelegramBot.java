@@ -18,6 +18,7 @@ import java.text.ParseException;
 public class TelegramBot extends TelegramLongPollingBot {
 
     private final BotConfig botConfig;
+    private final CurrencyController currencyController;
 
     @Override
     public String getBotUsername() {
@@ -45,7 +46,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                     break;
                 default:
                     try {
-                        currencyCode = CurrencyController.getCurrencyRate(messageText, currency);
+                        currencyCode = currencyController.getCurrencyRate(messageText, currency);
 
                     } catch (IOException e) {
                         sendMessage(chatId, "We have not found such a currency." + "\n" +
