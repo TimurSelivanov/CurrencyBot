@@ -19,7 +19,7 @@ https://github.com/TimurSelivanov/CurrencyBot.git
 
 Register the new bot in Telegram using `@BotFather`, you will get your bot name and its token.
 
-Open project with your IDE, and update bots name and token in `application.properties` file.
+Open the project with your IDE, and update bot's name and token in the `application.properties` file.
 
 Run the application and your bot in Telegram.
 Enjoy! )
