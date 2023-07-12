@@ -1,4 +1,4 @@
-## CurrencyBot
+### CurrencyBot
 
 Telegram bot shows official exchange rate for Belarusian ruble using bank API: https://www.nbrb.by/apihelp/exrates
 It is simple, no need to get personal account, token etc. Bot functionality is implemented through GET requests.
@@ -24,5 +24,5 @@ Open the project with your IDE, and update bot's name and token in the `applicat
 Run the application and your bot in Telegram.
 Enjoy! )
 
-## Technology stack
+### Technology stack
 Java, Spring boot, Lombok, Telegram API, Belarusian national bank API, Postman
